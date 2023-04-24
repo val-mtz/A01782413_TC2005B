@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: white;
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+  }
+  
+  p {
+    color: white;
+    font-weight: 300;
+  }
+  
+  .grid-item {
+    background-color: #253f4b;
+  }
+  
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "nav nav nav"
+      "intro intro intro"
+      "intro intro intro"
+      "intro intro intro"
+      "c2a c2a c2a"
+      "img1 img2 img3"
+      "img1 img2 img3"
+      "footer footer footer";
+  }
+  
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    padding-right: 8%;
+  }
+  
+  .nav-item {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .center-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: nav;
+    align-items: center;
+  }
+  
+  #intro {
+    grid-area: intro;
+    background-color: #b87d2d;
+    padding: 10%;
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  
+  #newsletter {
+    grid-area: c2a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #newsletter p {
+    font-weight: bold;
+  }
+  
+  form input[type="submit"] {
+    background-color: #a76a18;
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+  }
+  
+  .img p {
+    color: black;
+    font-size: 0.8em;
+  }
+  
+  #img1 {
+    grid-area: img1;
+  }
+  
+  #img2 {
+    grid-area: img2;
+  }
+  
+  #img3 {
+    grid-area: img3;
+  }
+  
+  #footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

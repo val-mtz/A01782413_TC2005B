@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Garamond, serif as fallback -->
+    <style>
+        body {font-family: Garamond, serif; }
+        .testDiv {
+            border: 10px outset rgba(132, 0, 255, 0.859);
+            background-color: rgba(64, 242, 198, 0.667);
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>HTML Cheat Sheet </h1>
+    <h2> Tags en HTML </h2>
+    <ul>
+        <li><h3> &lt;a> : The Anchor element </h3>
+            <p> Usando href como atributo, crea un hipervínculo a páginas web, archivos, direcciones de email, 
+                direcciones dentro de la misma página, etc. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;a href="https://www.google.com"> Google &lt;/a> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <a href="htpps://www.google.com"> Google </a> 
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;p> : The Paragraph element </h3>
+            <p> Representa un párrafo. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Los párrafos son elementos a nivel de bloque y, en particular, se cierran automáticamente 
+                    si se analiza otro elemento a nivel de bloque antes de la etiqueta de cierre. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p>Los párrafos son elementos a nivel de bloque y, en particular, se cierran automáticamente 
+                si se analiza otro elemento a nivel de bloque antes de la etiqueta de cierre. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;h1, h2, ... , h6> : The Section Heading element </h3>
+            <p> Los elementos HTML &lt;h1> a &lt;h6> representan seis niveles de encabezados de sección. 
+                &lt;h1> es el nivel de sección más alto y &lt;h6> es el más bajo. <br><br> Se utilizan de 
+                la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;h1> Título o encabezado principal &lt;/h1> <br>
+                    &lt;h2> Subtítulo o primer encabezado secundario &lt;/h2> <br>
+                    &lt;h6> Nivel de encabezado más bajo &lt;/h6> </p>
+            </blockquote>
+            <p> Que se ven como: </p>
+            <blockquote>
+                <h1> Título o encabezado principal </h1>
+                <h2> Subtítulo o primer encabezado secundario </h2>
+                <h6> Nivel de encabezado más bajo </h6>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;div&gt : The Content Division element </h3>
+            <p> Se usa para hacer divisiones de contenido en la página web como texto, imágenes, encabezado, 
+                pie de página, barra de navegación, etc. pero no tiene efecto en el contenido o el diseño 
+                a menos que se estilice usando CSS. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;div class="testDiv"> <br>
+                    <span style="padding-left: 20px; display:block">
+                        &lt;h4> Encabezado h4 dentro de un div con formato &lt;/h4> <br>
+                        &lt;p> Párrafo dentro de un div con formato. &lt;/p></span>
+                    &lt;/div> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <div class="testDiv">
+                    <h4> Encabezado h4 dentro de un div con formato </h4>
+                    <p> Párrafo dentro de un div con formato. </p>
+                </div>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;span&gt : The Content Span element </h3>
+            <p> Se utiliza como un contenedor genérico <i>in-line</i> para redactar contenido pero 
+                no representa inherentemente nada. Similarmente a div, puede usarse para agrupar 
+                elementos con fines de estilo y es mejor usarlo cuando no haya ningún otro elemento 
+                semántico disponible. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> La página ocupa los colores <br>
+                    <span style="padding-left: 20px; display:block">
+                        &lt;span style="color: rgba(132, 0, 255, 0.859);;">morado&lt;/span>, <br>  
+                        &lt;span style="color: rgba(64, 242, 198, 0.667);">turquesa&lt;/span>, y <br>
+                        &lt;span style="color: rgb(24, 219, 66);">verde&lt;/span>. &lt;/p> </span> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> La página ocupa los colores
+                    <span style="color: rgba(132, 0, 255, 0.859);;"> morado</span>,   
+                    <span style="color: rgba(64, 242, 198, 0.667);"> turquesa</span>, y  
+                    <span style="color: rgb(24, 219, 66);">verde</span>. </p> 
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;strong> : The Strong importance element </h3>
+            <p> Indica que el contenido tiene una gran importancia, seriedad o urgencia. 
+                Los navegadores normalmente muestran el contenido en negrita. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Si en algún momento desea volver a la versión de la tienda de aplicaciones, 
+                    &lt;strong>no elimine la aplicación&lt;/strong>, ya que ambas versiones comparten 
+                    los mismos datos. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Si en algún momento desea volver a la versión normal,<strong>no elimine la aplicación</strong>, 
+                    ya que ambas versiones comparten los mismos datos. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;i> : The Idiomatic text element </h3>
+            <p> Representa un rango de texto que se distingue del texto normal por alguna razón. 
+                Por lo general se muestra el contenido en cursiva. <br><br> 
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Existen 2 tipos de contenedores genéricos para redactar contenido, el 
+                    &lt;i>in-line&lt;/i>. y el &lt;i>block&lt;/i>. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Existen 2 tipos de contenedores genéricos para redactar contenido, el 
+                    <i>in-line</i>. y el <i>block</i>. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;u> : The Unarticulated Annotation element </h3>
+            <p> Por convención, indica que un texto tiene un error ortográfico o contiene una anotación no textual. 
+                Se representa de forma predeterminada como un subrayado simple, pero se puede modificar con CSS. 
+                <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Muchos textos en línea contienen errores ortográficos que algunas veces pasan desapercibidos
+                    y pueden resultar en la generalización de malas practicas ortográficas, como escribir &lt;u>disque&lt;/u> 
+                    o &lt;u>haber&lt;/u> cuando se quiere significar a ver. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Muchos textos en línea contienen errores ortográficos que algunas veces pasan desapercibidos
+                    y pueden resultar en la generalización de malas practicas ortográficas, como escribir <u>disque</u> 
+                    o <u>haber</u> cuando se quiere significar a ver. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;b> : The Bring Attention To element </h3>
+            <p> Se utiliza para llamar la atención del lector sobre el contenido del elemento, al que de otro modo 
+                no se le concede una importancia especial. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Algo importante de recordar en el uso de las tags es que &lt;b>no siempre&lt;/b>
+                    requieren de una inicial y de una final para ser utilizadas. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Algo importante de recordar en el uso de las tags es que <b>no siempre</b>
+                    requieren de una inicial y de una final para ser utilizadas. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;strike> (deprecated) </h3>
+            <p> Coloca un tachado (línea horizontal) sobre el texto. Este elemento es obsoleto
+                en algunas versiones de HTML y ahora se recomienda usar &lt;del>. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Fecha: Lunes 10 de abril de &lt;strike>2022&lt;/strike> 2023. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Fecha: Lunes 10 de abril de <strike>2022</strike> 2023. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;small> : The Side Comment element </h3>
+            <p> Representa comentarios secundarios y "letra hormiga" independientemente de su estilo de presentación. 
+                De forma predeterminada, representa el texto dentro de un tamaño de fuente más pequeño. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Descuento de 40% en cursos. &lt;hr> 
+                    &lt;small> Aplican términos y condiciones. &lt;/small> &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Descuento de 40% en cursos. <hr> <small>Aplican términos y condiciones.</small> </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;em> : The Emphasis element </h3>
+            <p> Marca texto que tiene un énfasis. Se puede anidar, y cada nivel de anidamiento indica un mayor grado 
+                de énfasis, usualmente es representado en cursiva. <br><br>Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Uno de los ejemplos más comunes de cómo cambia el significado dependiendo el énfasis es: 
+                    &lt;br> &lt;em>Ella&lt;/em> dijo que no tomó su dinero.
+                    &lt;br> Ella dijo que &lt;em>no&lt;/em> tomó su dinero.
+                    &lt;br> Ella dijo que no tomó su &lt;em>dinero&lt;/em>. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Uno de los ejemplos más comunes de cómo cambia el significado dependiendo el énfasis es: 
+                    <br> <em>Ella</em> dijo que no tomó su dinero.
+                    <br> Ella dijo que <em>no</em> tomó su dinero.
+                    <br> Ella dijo que no tomó su <em>dinero</em>. </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;header> </h3>
+            <p> Representa contenido introductorio. Puede contener algunos elementos de encabezado, 
+                pero también algún logotipo, formulario de búsqueda, nombre de autor, etc. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;fieldset> &lt;header> &lt;h4> &lt;span style="display: block; text-align: center;">
+                    &lt;a href="#">Inicio de la página&lt;/a> &lt;/span> &lt;/h4> &lt;p>Hecho por Valeria Martínez 
+                    - A01782413&lt;/p> &lt;/header> &lt;/fieldset> </p>
+            </blockquote>
+            <p> Que se vería como: </p>
+            <blockquote>
+                <fieldset>
+                    <header>
+                        <h4>
+                            <span style="display: block; text-align: center;">
+                                <a href="#">Inicio de la página</a></span></h4>
+                        <p>Hecho por Valeria Martínez - A01782413</p></header></fieldset>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;section> : The Generic Section element </h3>
+            <p> Representa una sección independiente genérica de un documento que no tiene un elemento semántico 
+                más específico para representarlo. Como buena práctica, las secciones siempre deben tener un encabezado. 
+                <br><br>Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;section> &lt;h4> Introducción &lt;/h4> &lt;p> Sección de introducción. &lt;/p> &lt;/section>
+                    &lt;section> &lt;h5> Desarrollo &lt;/h5> &lt;p> Sección de desarrollo. &lt;/p> &lt;/section> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                    <section> 
+                        <h4> Introducción </h4> 
+                        <p> Sección de introducción. </p> </section>
+                    <section> 
+                        <h5> Desarrollo </h5> 
+                        <p> Sección de desarrollo. </p> </section>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;article> : The Article Contents element </h3>
+            <p> Representa una composición independiente que por lo general está pensada para ser distribuida 
+                o reutilizable de forma independiente. Puede ser una publicación en un foro, un artículo de revista 
+                o periódico, una entrada de blog, un widget, etc. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;article> &lt;fieldset> &lt;h4>An open letter signed by tech leaders, researchers proposes 
+                    delaying AI development.&lt;/h4> &lt;h5>March 29, 2023 6:17 PM ET&lt;/h5> &lt;a href=
+                    "https://shorturl.at/nszY7">Read full article.&lt;/a> &lt;/fieldset> &lt;/article> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <article>
+                    <fieldset>
+                        <h4>An open letter signed by tech leaders, researchers proposes delaying AI development.</h4>
+                        <h5>March 29, 2023 6:17 PM ET</h5> <a href="https://shorturl.at/nszY7">Read full article.</a>
+                        </fieldset></article>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;aside> : The Aside element </h3>
+            <p> Representa una parte de un documento cuyo contenido solo está indirectamente relacionado con el 
+                contenido principal del documento. Usualmente se representan como barras laterales o cuadros de 
+                llamada. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Este es texto en un párrafo normal. &lt;/p> &lt;aside>
+                    &lt;h4>Encabezado h4 dentro de un aside sin diseño especial&lt;/h4>
+                    &lt;p>Párrafo dentro un aside sin diseño especial&lt;/p> &lt;/aside> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Este es texto en un párrafo normal. </p>
+                <aside>
+                    <h4>Encabezado h4 dentro de un aside sin diseño especial</h4>
+                    <p>Párrafo dentro un aside sin diseño especial</p> </aside>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;footer> </h3>
+            <p> Representa un pie de página. Normalmente contiene información sobre el autor de la sección, 
+                datos de derechos de autor o enlaces a documentos relacionados. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Turing's paper is "one of the intellectual landmarks of the last century,"
+                    &lt;sup>4&lt;/sup> &lt;hr> &lt;footer>&lt;small>&lt;sup>4&lt;/sup>John P Burgess, 
+                    preface in George S Boolos, John P Burgess, and Richard C Jeffrey, Computability and Logic, 
+                    fourth edition (Cambridge University Press, 2002), xi&lt;/small>&lt;/footer>&lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Turing's paper is "one of the intellectual landmarks of the last century,"<sup>4</sup> 
+                <hr> <footer><small><sup>4</sup>John P Burgess, preface in George S Boolos, John P Burgess, 
+                    and Richard C Jeffrey, Computability and Logic, fourth edition (Cambridge University 
+                    Press, 2002), xi</small></footer></p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;nav> : The Navigation Section element </h3>
+            <p> Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, 
+                ya sea dentro del documento actual o hacia otros documentos. Por ejemplo: menús, las tablas 
+                de contenido y los índices. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Tenga en cuenta que la versión beta puede no ser tan estable como la versión 
+                    de la tienda de aplicaciones. Si en algún momento desea volver a la versión de la 
+                    tienda de aplicaciones, &lt;strong>no elimine la aplicación&lt;/strong>, ya que 
+                    ambas versiones comparten los mismos datos. &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <nav>
+                    <a href="#">Inicio</a> |
+                    <a href="#Bottom">Final</a> |
+                    <a href="/">Página principal</a>
+                    </nav>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;img> : The Image Embed element </h3>
+            <p> Inserta una imagen en el documento. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;img src="Images/Hubble.jpg"; width="300px"> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <img src="Images/Hubble.jpg"; width="300px"> 
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;br> : The Line Break element </h3>
+            <p> Produce un salto de línea en el texto. Es útil en los textos en los que la división 
+                de líneas es significativa. <br><br>Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> &lt;b>&lt;i>For Whom the Bell Tolls&lt;/i>&lt;/b> by John Donne &lt;br>
+                    &lt;br> No man is an island, &lt;br> Entire of itself. &lt;br>
+                    Each is a piece of the continent, &lt;br> A part of the main. &lt;br>
+                    If a clod be washed away by the sea, &lt;br> Europe is the less. &lt;br>
+                    As well as if a promontory were. &lt;br> As well as if a manor of thine own &lt;br>
+                    Or of thine friend's were. &lt;br> Each man's death diminishes me, &lt;br>
+                    For I am involved in mankind. &lt;br> Therefore, send not to know &lt;br>
+                    For whom the bell tolls, &lt;br> It tolls for thee. &lt;br>&lt;br> &lt;/p> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> <b><i>For Whom the Bell Tolls</i></b> by John Donne <br><br>
+                    No man is an island, <br> Entire of itself. <br>
+                    Each is a piece of the continent, <br> A part of the main. <br>
+                    If a clod be washed away by the sea, <br> Europe is the less. <br>
+                    As well as if a promontory were. <br> As well as if a manor of thine own <br>
+                    Or of thine friend's were. <br> Each man's death diminishes me, <br>
+                    For I am involved in mankind. <br> Therefore, send not to know <br>
+                    For whom the bell tolls, <br> It tolls for thee. <br><br> </p>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;hr> : The Thematic Break (Horizontal Rule) element </h3>
+            <p> Significa regla horizontal y representa una ruptura temática entre elementos a nivel de 
+                párrafo: por ejemplo, un cambio de tema dentro de una sección o incluso una nueva sección. 
+                <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;fieldset> &lt;p> Primera sección dentro de una página web. &lt;br> &lt;hr>
+                        Segunda sección separada por una regla horizontal. &lt;br> &lt;hr>
+                        Tercera sección separada por una regla horizontal.&lt;/p> &lt;/fieldset> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <fieldset>
+                    <p> Primera sección dentro de una página web. <br> <hr>
+                        Segunda sección separada por una regla horizontal. <br> <hr>
+                        Tercera sección separada por una regla horizontal.</p> </fieldset>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;form> : The Form element </h3>
+            <p> Representa una sección que contiene controles interactivos para enviar información 
+                (un formulario - toma entradas). <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;form> &lt;label for="acc"> Matrícula: &lt;/label>
+                    &lt;input type="text" name="acc" id="acc" placeholder="A0xxxxxxx">&lt;br>&lt;br>
+                    &lt;label for="pwd"> Contraseña: &lt;/label>
+                    &lt;input type="text" name="pwd" id="pwd"> &lt;br> &lt;br>
+                    &lt;input type="submit" value="Ingresar"> &lt;/form> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <form> 
+                    <label for="acc"> Matrícula: </label>
+                        <input type="text" name="acc" id="acc" placeholder="A0"><br><br>
+                    <label for="pwd"> Contraseña: </label>
+                        <input type="text" name="pwd" id="pwd"> <br> <br>
+                    <input type="submit" value="Ingresar"> </form>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;table> : The Table element </h3>
+            <p> Representa datos tabulares, es decir, información presentada en una tabla bidimensional 
+                compuesta de filas y columnas de celdas que contienen datos. <br><br>
+                Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;table border=""> &lt;caption align="top"> Tabla &lt;/caption> &lt;tbody>
+                    &lt;tr> &lt;th> Columna 1 &lt;/th> &lt;th> Columna 2 &lt;/th> 
+                    &lt;th> Columna 3 &lt;/th> &lt;/tr> &lt;tr> &lt;td> Contenido de la columna 1 &lt;/td>
+                    &lt;td> Contenido de la columna 2 &lt;/td> &lt;td> Contenido de la columna 3 &lt;/td>
+                    &lt;/tr> &lt;/tbody> &lt;/table> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <table border="">
+                    <caption align="top"> Tabla </caption>
+                        <tbody>
+                            <tr>
+                                <th> Columna 1 </th>
+                                <th> Columna 2 </th>
+                                <th> Columna 3 </th>
+                            </tr>
+                            <tr>
+                                <td> Contenido de la columna 1 </td>
+                                <td> Contenido de la columna 2 </td>
+                                <td> Contenido de la columna 3 </td>
+                            </tr> </tbody> </table>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;ul> : The Unordered List element </h3>
+            <p> Representa una lista "desordenada" de elementos, normalmente es representada con viñetas. 
+                <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p>Ingredientes:&lt;/p> &lt;ul> &lt;li> 3 plátanos maduros, machacados &lt;/li>
+                    &lt;li> ¾ taza de miel (255 g) &lt;/li> &lt;li> 1 huevo &lt;/li>
+                    &lt;li> 2 cucharadas de leche de almendra &lt;/li>
+                    &lt;li> 1 cucharadita de extracto de vainilla &lt;/li>
+                    &lt;li> 2 tazas de harina de trigo integral (260 g) &lt;/li>
+                    &lt;li> 1 cucharadita de bicarbonato de sodio &lt;/li>
+                    &lt;li> Sal, una pizca &lt;/li> &lt;/ul> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p>Ingredientes:</p>
+                <ul>
+                    <li> 3 plátanos maduros, machacados </li>
+                    <li> ¾ taza de miel (255 g) </li>
+                    <li> 1 huevo </li>
+                    <li> 2 cucharadas de leche de almendras </li>
+                    <li> 1 cucharadita de extracto de vainilla </li>
+                    <li> 2 tazas de harina de trigo integral (260 g) </li>
+                    <li> 1 cucharadita de bicarbonato de sodio </li>
+                    <li> Sal, una pizca </li>
+                    <li> 1 taza de puré de manzana </li> </ul>
+            </blockquote>
+        </li>
+
+        <li><h3> &lt;ol> : The Ordered List element </h3>
+            <p> Representa una lista ordenada de elementos, normalmente una lista numerada o en 
+                orden alfabético. <br><br> Se utiliza de la siguiente manera: </p>
+            <blockquote>  
+                <p> &lt;p> Instrucciones:&lt;/p> &lt;ol> &lt;li> Precalentar el horno a 170°C. &lt;/li>
+                    &lt;li> Machacar los plátanos, luego agregar puré de manzana, miel, huevo, extracto 
+                        de vainilla y leche de almendras. Batir hasta que esté bien combinado. &lt;/li>
+                    &lt;li> En otro tazón, mezclar la harina, el bicarbonato de sodio y la sal. &lt;/li>
+                    &lt;li> Agregar los ingredientes secos a los ingredientes húmedos y revolver. &lt;/li>
+                    &lt;li> Rociar un molde para pan con aceite en aerosol o limpiarlo con aceite. 
+                        Vertir la mezcla en un molde para pan.&lt;/li>
+                    &lt;li> Hornear 50-55 minutos. &lt;/li> &lt;/ol> </p>
+            </blockquote>
+            <p> Que se ve como: </p>
+            <blockquote>
+                <p> Instrucciones:</p>
+                <ol>
+                    <li> Precalentar el horno a 170°C. </li>
+                    <li> Machacar los plátanos, luego agregar puré de manzana, miel, huevo, extracto 
+                        de vainilla y leche de almendras. Batir hasta que esté bien combinado. </li>
+                    <li> En otro tazón, mezclar la harina, el bicarbonato de sodio y la sal. </li>
+                    <li> Agregar los ingredientes secos a los ingredientes húmedos y revolver. </li>
+                    <li> Rociar un molde para pan con aceite en aerosol o limpiarlo con aceite. 
+                        Vertir la mezcla en un molde para pan.</li>
+                    <li> Hornear 50-55 minutos. </li> </ol>
+            </blockquote>
+        </li>
+    </ul>
+    <a id="Bottom"></a>
+</body>
+</html>

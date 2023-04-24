@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: aliceblue;
+    background-image: linear-gradient(180deg, rgba(0, 4, 255, 0.301),rgb(92, 239, 163));
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 2px 2px #0b1eec99;
+    color: #00ffc3f6;
+    font-size: 40px
+}
+
+h2 {
+    text-shadow: 2px 2px #0b1eec99;
+    color: #00ffc3f6;
+    font-size: 32px;
+}
+
+div {
+    margin: 12px;
+}
+
+.border {
+    border: 7mm ridge #0b1eec99;
+    padding-left: 20px;
+}
+
+.border_sides {
+    border-top: 3mm dashed #1f0cf2;
+    border-bottom:3mm dotted #0f1af187;
+    border-left: 4mm double #1927e9;;
+    border-right: 4mm inset #0b1eec99;
+    padding-left: 20px;
+}
+
+.border_radius {
+    border-radius: 10mm;
+    border: 3mm solid #0b1eec99;
+    padding-left: 20px;
+}
+
+.background_image {
+    background-image: url(../HTML/Images/bck_color.png);
+    background-repeat: no-repeat;
+    color: white;
+    padding-left: 20px;
+}
+
+.color {
+    color: #0b1eecec;
+    padding-left: 20px;
+}
+
+.font {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.font_family {
+    font-family: 'Garamond', serif;
+    font-size: 19px;
+    padding-left: 20px;
+}
+
+.font_size-weight {
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.width-height {
+    background-color: honeydew;
+    width: 300px;
+    height: 130px;
+    padding-left: 20px;
+}
+
+.list_style {
+    padding-left: 20px;
+}
+.list_style > li > ul{
+    list-style-type: square;
+    list-style-image: linear-gradient(90deg , #ec0b0be2, #0b1eec99);
+}
+
+.margin {
+    border: 3mm solid #0b1eec99;
+    margin: 10px 30px;
+    padding-left: 25px;
+}
+
+.padding {
+    border: 3mm solid #0b1eec99;
+    padding: 30px 25px 30px 25px
+}
+
+.overflow {
+    border: 3mm solid #0b1eec99;
+    overflow: hidden;
+    padding-left: 25px;
+}
+p.overflowtest {
+    width: auto;
+    height: 75px;
+    border: solid;
+    overflow: scroll;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0b1eec99;
+    padding: 5px;
+}
+.grid-item {
+    background-color: #ffffffcc;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.posrel {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 8px solid #0b1eec99;
+} 
+  
+.posabs {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    width: 200px;
+    height: 100px;
+    border: 8px solid #0b1eec99;
+  }
+
+  #blur {
+    filter: blur(2px);
+  }
